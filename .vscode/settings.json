@@ -1,0 +1,8 @@
+{
+  "typescript.native-preview.tsdk": "./node_modules/@typescript/native-preview",
+  "js/ts.experimental.useTsgo": true,
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": true,
+  "oxc.typeAware": true,
+  "explorer.fileNesting.enabled": true
+}

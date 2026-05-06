@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "singleQuote": true,
+  "sortTailwindcss": {
+    "functions": ["cva", "cn", "clsx"]
+  },
+  "sortImports": {
+    "newlinesBetween": false,
+    "customGroups": [
+      {
+        "groupName": "react",
+        "elementNamePattern": ["react", "react/**", "react-*", "react-*/**"]
+      }
+    ],
+    "groups": [
+      "builtin",
+      "react",
+      "external",
+      { "newlinesBetween": true },
+      ["internal", "subpath"],
+      { "newlinesBetween": true },
+      ["parent", "sibling", "index"],
+      { "newlinesBetween": true },
+      "style",
+      { "newlinesBetween": true },
+      "side_effect"
+    ]
+  }
+}

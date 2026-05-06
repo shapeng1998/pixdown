@@ -1,0 +1,60 @@
+{
+  "name": "pixdown",
+  "version": "0.0.0",
+  "license": "MIT",
+  "bin": {
+    "pixdown": "./dist/cli.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./cli": "./dist/cli.mjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "prepare": "simple-git-hooks",
+    "prepublishOnly": "pnpm run build",
+    "release": "bumpp",
+    "start": "tsx src/cli.ts",
+    "test": "vitest",
+    "typecheck": "tsgo"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:types",
+    "@typescript/native-preview": "catalog:types",
+    "bumpp": "catalog:cli",
+    "lint-staged": "catalog:lint",
+    "oxfmt": "catalog:lint",
+    "oxlint": "catalog:lint",
+    "oxlint-tsgolint": "catalog:lint",
+    "publint": "catalog:cli",
+    "simple-git-hooks": "catalog:lint",
+    "tsdown": "catalog:cli",
+    "tsx": "catalog:cli",
+    "typescript": "catalog:types",
+    "vitest": "catalog:testing"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,mjs,cjs,ts,tsx}": [
+      "oxlint --fix"
+    ],
+    "*.{js,jsx,mjs,cjs,ts,tsx,json,jsonc,css,yaml,yml,md}": [
+      "oxfmt --no-error-on-unmatched-pattern"
+    ]
+  },
+  "packageManager": "pnpm@10.33.3"
+}

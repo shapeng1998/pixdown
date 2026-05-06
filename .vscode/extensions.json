@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "antfu.pnpm-catalog-lens",
+    "usernamehw.errorlens",
+    "oxc.oxc-vscode",
+    "TypeScriptTeam.native-preview"
+  ]
+}
