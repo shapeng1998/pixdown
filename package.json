@@ -25,7 +25,7 @@
     "lint:fix": "oxlint --fix",
     "prepare": "simple-git-hooks",
     "prepublishOnly": "pnpm run build",
-    "release": "bumpp",
+    "release": "bumpp --git-check --execute \"git add package.json\"",
     "start": "tsx src/cli.ts",
     "test": "vitest",
     "typecheck": "tsgo"
