@@ -82,7 +82,7 @@ importers:
         version: 2.13.1
       tsdown:
         specifier: catalog:cli
-        version: 0.22.0(@typescript/native-preview@7.0.0-dev.20260507.1)(publint@0.3.19)(tsx@4.21.0)(typescript@6.0.3)(unrun@0.2.37)
+        version: 0.22.0(@typescript/native-preview@7.0.0-dev.20260507.1)(publint@0.3.19)(tsx@4.21.0)(typescript@6.0.3)
       tsx:
         specifier: catalog:cli
         version: 4.21.0
@@ -795,8 +795,8 @@ packages:
   '@types/deep-eql@4.0.2':
     resolution: {integrity: sha512-c9h9dVVMigMPc4bwTvC5dxqtqJZwQPePsWjPlpSOnojbor6pGqdk541lfA7AqFQr5pB1BRdq0juY9db81BwyFw==}
 
-  '@types/estree@1.0.9':
-    resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
+  '@types/estree@1.0.8':
+    resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
   '@types/jsesc@2.5.1':
     resolution: {integrity: sha512-9VN+6yxLOPLOav+7PwjZbxiID2bVaeq0ED4qSQmdQTdjnXJSaCVKTR58t15oqH1H5t8Ng2ZX1SabJVoN9Q34bw==}
@@ -1353,16 +1353,6 @@ packages:
   undici-types@7.19.2:
     resolution: {integrity: sha512-qYVnV5OEm2AW8cJMCpdV20CDyaN3g0AjDlOGf1OW4iaDEx8MwdtChUp4zu4H0VP3nDRF/8RKWH+IPp9uW0YGZg==}
 
-  unrun@0.2.37:
-    resolution: {integrity: sha512-AA7vDuYsgeSYVzJMm16UKA+aXFKhy7nFqW9z5l7q44K4ppFWZAMqYS58ePRZbugMLPH0fwwMzD5A8nP0avxwZQ==}
-    engines: {node: '>=20.19.0'}
-    hasBin: true
-    peerDependencies:
-      synckit: ^0.11.11
-    peerDependenciesMeta:
-      synckit:
-        optional: true
-
   vite@8.0.10:
     resolution: {integrity: sha512-rZuUu9j6J5uotLDs+cAA4O5H4K1SfPliUlQwqa6YEwSrWDZzP4rhm00oJR5snMewjxF5V/K3D4kctsUTsIU9Mw==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -1862,7 +1852,7 @@ snapshots:
 
   '@types/deep-eql@4.0.2': {}
 
-  '@types/estree@1.0.9': {}
+  '@types/estree@1.0.8': {}
 
   '@types/jsesc@2.5.1': {}
 
@@ -2036,7 +2026,7 @@ snapshots:
 
   estree-walker@3.0.3:
     dependencies:
-      '@types/estree': 1.0.9
+      '@types/estree': 1.0.8
 
   eventemitter3@5.0.4: {}
 
@@ -2370,7 +2360,7 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  tsdown@0.22.0(@typescript/native-preview@7.0.0-dev.20260507.1)(publint@0.3.19)(tsx@4.21.0)(typescript@6.0.3)(unrun@0.2.37):
+  tsdown@0.22.0(@typescript/native-preview@7.0.0-dev.20260507.1)(publint@0.3.19)(tsx@4.21.0)(typescript@6.0.3):
     dependencies:
       ansis: 4.2.0
       cac: 7.0.0
@@ -2391,7 +2381,6 @@ snapshots:
       publint: 0.3.19
       tsx: 4.21.0
       typescript: 6.0.3
-      unrun: 0.2.37
     transitivePeerDependencies:
       - '@ts-macro/tsc'
       - '@typescript/native-preview'
@@ -2424,11 +2413,6 @@ snapshots:
       unconfig-core: 7.5.0
 
   undici-types@7.19.2: {}
-
-  unrun@0.2.37:
-    dependencies:
-      rolldown: 1.0.0-rc.17
-    optional: true
 
   vite@8.0.10(@types/node@25.6.0)(esbuild@0.27.7)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.4):
     dependencies:
