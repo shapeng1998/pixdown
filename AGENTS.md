@@ -43,7 +43,8 @@ Before marking work as finished, run:
 5. Add dependency versions only in `pnpm-workspace.yaml` catalogs.
 6. Reference dependency versions from `package.json` with `catalog:<name>`.
 7. Do not add direct semver ranges in `package.json`.
-8. Current catalog groups:
+8. Prefer pnpm catalog-aware commands for dependency changes, then inspect the diff. For example, use `pnpm add <package> --catalog <name>` or the equivalent supported by the local pnpm version instead of hand-editing manifests when the CLI can express the change cleanly.
+9. Current catalog groups:
 
 - `cli`: command-line and build/release tooling.
 - `lint`: linting, formatting, and git-hook tooling.

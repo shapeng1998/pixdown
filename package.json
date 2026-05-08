@@ -34,6 +34,9 @@
     "test": "vitest",
     "typecheck": "tsgo"
   },
+  "dependencies": {
+    "takumi-js": "catalog:runtime"
+  },
   "devDependencies": {
     "@types/node": "catalog:types",
     "@typescript/native-preview": "catalog:types",
