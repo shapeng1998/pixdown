@@ -35,7 +35,14 @@
     "typecheck": "tsgo"
   },
   "dependencies": {
-    "takumi-js": "catalog:runtime"
+    "@shikijs/rehype": "catalog:runtime",
+    "rehype-katex": "catalog:runtime",
+    "remark-gfm": "catalog:runtime",
+    "remark-math": "catalog:runtime",
+    "remark-parse": "catalog:runtime",
+    "remark-rehype": "catalog:runtime",
+    "takumi-js": "catalog:runtime",
+    "unified": "catalog:runtime"
   },
   "devDependencies": {
     "@types/node": "catalog:types",
