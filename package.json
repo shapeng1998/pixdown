@@ -37,6 +37,7 @@
   "dependencies": {
     "@shikijs/rehype": "catalog:runtime",
     "rehype-katex": "catalog:runtime",
+    "rehype-stringify": "catalog:runtime",
     "remark-gfm": "catalog:runtime",
     "remark-math": "catalog:runtime",
     "remark-parse": "catalog:runtime",

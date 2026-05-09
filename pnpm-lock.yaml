@@ -41,6 +41,9 @@ catalogs:
     rehype-katex:
       specifier: ^7.0.1
       version: 7.0.1
+    rehype-stringify:
+      specifier: ^10.0.1
+      version: 10.0.1
     remark-gfm:
       specifier: ^4.0.1
       version: 4.0.1
@@ -84,6 +87,9 @@ importers:
       rehype-katex:
         specifier: catalog:runtime
         version: 7.0.1
+      rehype-stringify:
+        specifier: catalog:runtime
+        version: 10.0.1
       remark-gfm:
         specifier: catalog:runtime
         version: 4.0.1
@@ -1611,6 +1617,9 @@ packages:
 
   rehype-katex@7.0.1:
     resolution: {integrity: sha512-OiM2wrZ/wuhKkigASodFoo8wimG3H12LWQaH8qSPVJn9apWKFSH3YOCtbKpBorTVw/eI7cuT21XBbvwEswbIOA==}
+
+  rehype-stringify@10.0.1:
+    resolution: {integrity: sha512-k9ecfXHmIPuFVI61B9DeLPN0qFHfawM6RsuX48hoqlaKSF61RskNjSm1lI8PhBEM0MRdLxVVm4WmTqJQccH9mA==}
 
   remark-gfm@4.0.1:
     resolution: {integrity: sha512-1quofZ2RQ9EWdeN34S79+KExV1764+wCUGop5CPL1WGdD0ocPpu91lzPGbwWMECpEpd42kJGQwzRfyov9j4yNg==}
@@ -3345,6 +3354,12 @@ snapshots:
       katex: 0.16.45
       unist-util-visit-parents: 6.0.2
       vfile: 6.0.3
+
+  rehype-stringify@10.0.1:
+    dependencies:
+      '@types/hast': 3.0.4
+      hast-util-to-html: 9.0.5
+      unified: 11.0.5
 
   remark-gfm@4.0.1:
     dependencies:
