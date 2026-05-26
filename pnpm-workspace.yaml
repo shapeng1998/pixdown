@@ -3,29 +3,29 @@ allowBuilds:
   simple-git-hooks: true
 catalogs:
   runtime:
-    '@shikijs/rehype': ^4.0.2
+    '@shikijs/rehype': ^4.1.0
     rehype-katex: ^7.0.1
     rehype-stringify: ^10.0.1
     remark-gfm: ^4.0.1
     remark-math: ^6.0.0
     remark-parse: ^11.0.0
     remark-rehype: ^11.1.2
-    takumi-js: ^1.1.2
+    takumi-js: ^1.5.1
     unified: ^11.0.5
   cli:
     bumpp: ^11.1.0
     publint: ^0.3.21
     tsdown: ^0.22.0
-    tsx: ^4.21.0
+    tsx: ^4.22.3
   lint:
-    lint-staged: ^17.0.4
-    oxfmt: ^0.49.0
-    oxlint: ^1.64.0
-    oxlint-tsgolint: ^0.22.1
+    lint-staged: ^17.0.5
+    oxfmt: ^0.51.0
+    oxlint: ^1.66.0
+    oxlint-tsgolint: ^0.23.0
     simple-git-hooks: ^2.13.1
   testing:
-    vitest: ^4.1.6
+    vitest: ^4.1.7
   types:
-    '@types/node': ^25.7.0
-    '@typescript/native-preview': 7.0.0-dev.20260513.1
+    '@types/node': ^25.9.1
+    '@typescript/native-preview': 7.0.0-dev.20260525.1
     typescript: ^6.0.3
