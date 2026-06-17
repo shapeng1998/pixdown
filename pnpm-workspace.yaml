@@ -10,7 +10,7 @@ catalogs:
     remark-math: ^6.0.0
     remark-parse: ^11.0.0
     remark-rehype: ^11.1.2
-    takumi-js: ^1.8.1
+    takumi-js: ^1.8.5
     unified: ^11.0.5
   cli:
     bumpp: ^11.1.0
@@ -19,13 +19,13 @@ catalogs:
     tsx: ^4.22.4
   lint:
     lint-staged: ^17.0.7
-    oxfmt: ^0.54.0
-    oxlint: ^1.69.0
+    oxfmt: ^0.55.0
+    oxlint: ^1.70.0
     oxlint-tsgolint: ^0.23.0
     simple-git-hooks: ^2.13.1
   testing:
-    vitest: ^4.1.8
+    vitest: ^4.1.9
   types:
     '@types/node': ^25.9.3
-    '@typescript/native-preview': 7.0.0-dev.20260610.1
+    '@typescript/native-preview': 7.0.0-dev.20260616.1
     typescript: ^6.0.3
